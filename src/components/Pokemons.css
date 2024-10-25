@@ -1,0 +1,30 @@
+.background_photo {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background_photo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../../public/background_photo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .6;
+    z-index: 0.5;
+    pointer-events: none;
+    border-radius: inherit;
+}
+
+.background_photo img {
+    position: absolute;
+    z-index: 1;
+}
