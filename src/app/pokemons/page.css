@@ -1,0 +1,8 @@
+.image_background {
+    background-image: url("../../../public/image_background_two.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
