@@ -1,30 +1,60 @@
 .background_photo {
-    position: relative;
-    height: 300px;
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .background_photo::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url("../../public/background_photo.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: .6;
-    z-index: 0.5;
-    pointer-events: none;
-    border-radius: inherit;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../public/background_photo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.6;
+  z-index: 0.5;
+  pointer-events: none;
+  border-radius: inherit;
 }
 
 .background_photo img {
-    position: absolute;
-    z-index: 1;
+  position: absolute;
+  z-index: 1;
+}
+
+.pokemon-card {
+  background-color: #8ae65966;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 16px;
+  border: gray 2px solid;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.statistic, .type {
+    transition: transform 0.3s ease;
+}
+
+.statistic:hover, .type:hover {
+    transform: scale(1.03);
+}
+
+.pokemon-image {
+    transition: transform 0.3s ease;
+}
+
+.pokemon-image:hover {
+    transform: scale(1.05);
 }

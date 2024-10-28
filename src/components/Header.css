@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ajusta según tu diseño */
+  padding: 1rem; /* Ajusta el espaciado */
+  background-color: #f8f8f8; /* Cambia el color según sea necesario */
+}
+
+.link {
+  margin-right: 20px; /* Espaciado entre los enlaces */
+  text-decoration: none; /* Eliminar subrayado */
+  color: #333; /* Cambia el color según sea necesario */
+}
+
+.logo {
+  width: 100px; /* Ajusta el tamaño de la imagen */
+  height: auto; /* Mantener la relación de aspecto */
+}
