@@ -13,9 +13,9 @@ export default async function Header() {
   return (
     <header className="header">
       <Link href="/">
-        <img src="/LogoPng.png" alt="Home" className="logo" />
+        <img src="/Logo.jpg" alt="Home" className="logo" />
       </Link>
-      <Link href="/pokemons" className="link">
+      <Link href="/pokemons" className="link font-bold text-2xl ">
         Pokemons
       </Link>
     </header>
